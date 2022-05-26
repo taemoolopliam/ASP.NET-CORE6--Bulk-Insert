@@ -24,6 +24,7 @@ namespace EFCoreBulk.Controllers
         [HttpPost]
         public async Task<IActionResult> Post()
         {
+            //หมายเหตุการให้เวลาการวัดประสิทธิภาพได้เบื่องต้น หากต้องการประสิทธิภาพต้องคำนึงเรื่องของ CPU RAM หรือมีการทำงานของโปรแกรมใดทำให้ผลลัพธ์การทดสอบผิดพลาดหรือไม่ หากผิดพลาดประการใดขออภัย ณ ที่นี้ด้วยครับ
             DateTime Start = DateTime.Now;
             TimeSpan TimeSpan;
             List<DimCustomer> dimCustomers = new List<DimCustomer>();
